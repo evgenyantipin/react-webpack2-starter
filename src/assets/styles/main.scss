@@ -1,0 +1,15 @@
+@import "~normalize-css/normalize";
+@import "./basic/mixins";
+@import "./basic/fonts";
+
+html {  
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+html, body {
+  @include better-fonts();
+}
+
+a {
+  outline: none;
+}

@@ -1,0 +1,21 @@
+@mixin better-fonts() {
+  text-rendering: optimizeLegibility;
+  font-feature-settings: 'kern';
+  font-kerning: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin media-mobile() {
+  @media (max-width: 940px) {
+    @content;
+  }
+}
+
+@mixin clearfix() {
+  &:after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}

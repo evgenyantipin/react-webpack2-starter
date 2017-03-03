@@ -1,0 +1,15 @@
+@import "~styles/basic/mixins";
+
+button {
+  background: grey;
+}
+.container {
+  max-width: 1200px;  
+  margin: 0 auto;  
+}
+
+.logo {
+  height: 100px;
+  width: 100px;
+  background: url("images/react.png") center center / cover;
+}
