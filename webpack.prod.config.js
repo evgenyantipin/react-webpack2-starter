@@ -3,6 +3,7 @@ var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
+var WebpackChunkHash = require('webpack-chunk-hash');
 var autoprefixer = require('autoprefixer');
 
 process.noDeprecation = true;
@@ -25,8 +26,7 @@ module.exports = {
 
   output: {    
     path: path.resolve(__dirname, 'dist'),         
-    filename: '[name].[chunkhash:8].js',
-    chunkFilename: '[name].[chunkhash:8].chunk.js',
+    filename: '[name].[chunkhash].js'    
   },
 
   module: {
@@ -82,6 +82,7 @@ module.exports = {
   },
 
   plugins: [
+    new WebpackChunkHash(),
     new LodashModuleReplacementPlugin,
     new webpack.ContextReplacementPlugin(
       /moment[\/\\]locale/, 
