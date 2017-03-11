@@ -85,7 +85,11 @@ module.exports = {
         {
           test: /\.(jpe?g|png|gif)$/i,
           use: { loader: 'url-loader', options: { limit: 10240 } },
-        }
+        },
+        { 
+          test: /\.svg(\?v=\d+\.\d+\.\d+)?$/, 
+          use: { loader: 'url-loader', options: { limit: 10000, mimetype: 'image/svg+xml' } }
+        }        
     ]
   },
 

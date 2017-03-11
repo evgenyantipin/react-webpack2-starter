@@ -12,7 +12,6 @@ export default class App extends Component {
 
   constructor(props) {
     super(props)
-
     this.state = {}
   }
 
@@ -24,7 +23,7 @@ export default class App extends Component {
     return (
       <div className={ cn('container') }>
         <div className={ cn('logo') }></div>
-        <button onClick = { ::this.onClick }> test </button>
+        <button onClick = { ::this.onClick }> click test </button>
       </div>
     )
   }
