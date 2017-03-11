@@ -76,7 +76,11 @@ module.exports = {
     extensions: ['*', '.js', '.scss', '.png']    
   },
 
-  plugins: [   
+  plugins: [ 
+    new webpack.ContextReplacementPlugin(
+      /moment[\/\\]locale/, 
+      /(en-gb|ru)\.js/
+    ),
     new webpack.DefinePlugin({
       __DEVELOPMENT__: false
     }), 
