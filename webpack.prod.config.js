@@ -2,6 +2,7 @@ var path = require('path');
 var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+var LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
 var autoprefixer = require('autoprefixer');
 
 process.noDeprecation = true;
@@ -61,7 +62,7 @@ module.exports = {
             cacheDirectory: false,
             babelrc: false,
             presets: [['es2015', { modules: false }], 'react', 'stage-0'],
-            plugins: ['transform-decorators-legacy', 'transform-runtime']
+            plugins: ['transform-decorators-legacy', 'transform-runtime', 'lodash']
           },
         },
         {
@@ -76,7 +77,8 @@ module.exports = {
     extensions: ['*', '.js', '.scss', '.png']    
   },
 
-  plugins: [ 
+  plugins: [
+    new LodashModuleReplacementPlugin,
     new webpack.ContextReplacementPlugin(
       /moment[\/\\]locale/, 
       /(en-gb|ru)\.js/
