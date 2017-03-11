@@ -51,7 +51,7 @@
     "babel-register": "^6.23.0",
     "classnames": "^2.2.5",
     "component-webpack-resolver-plugin": "^2.0.2",
-    "css-loader": "^0.26.2",
+    "css-loader": "^0.27.1",
     "delicate-error-reporter": "0.0.9",
     "extract-text-webpack-plugin": "^2.0.0",
     "file-loader": "^0.10.1",
@@ -69,6 +69,7 @@
     "url-loader": "^0.5.8",
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.4.1",
-    "webpack-hot-middleware": "^2.17.1"
+    "webpack-hot-middleware": "^2.17.1",
+    "whatwg-fetch": "^2.0.3"
   }
 }
