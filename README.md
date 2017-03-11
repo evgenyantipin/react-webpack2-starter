@@ -11,7 +11,8 @@
 * [React Hot Loader 3](https://github.com/gaearon/react-hot-loader) Tweak React components in real time.
 * [Webpack Dev Middleware](http://webpack.github.io/docs/webpack-dev-middleware.html) serves the files emitted from webpack over the Express server.
 * [Webpack Hot Middleware](https://github.com/glenjamin/webpack-hot-middleware) allows you to add hot reloading into the Express server.
-* CSS and SASS support with [PostCSS](https://github.com/postcss/postcss-loader) for advanced transformations (e.g. autoprefixer).
+* CSS and SCSS support with [PostCSS](https://github.com/postcss/postcss-loader) for advanced transformations (e.g. autoprefixer).
+* [whatwg-fetch](https://github.com/github/fetch) A window.fetch JavaScript polyfill for programmatically making web requests in the browser.
 
 ### Installation
 
