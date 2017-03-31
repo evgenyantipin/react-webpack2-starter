@@ -2,6 +2,25 @@
 [![devDependencies Status](https://david-dm.org/jekaantipin/react-webpack2-starter/dev-status.svg)](https://david-dm.org/jekaantipin/react-webpack2-starter?type=dev)
 [![Build Status](https://travis-ci.org/jekaantipin/react-webpack2-starter.svg?branch=master)](https://travis-ci.org/jekaantipin/react-webpack2-starter)
 
+## Getting started
+
+```
+$ git clone https://github.com/jekaantipin/react-webpack2-starter.git YOUR_APP
+```
+
+```
+$ cd YOUR_APP
+```
+
+```
+$ npm install
+```
+
+## npm commands
+* `npm run dev` - Run for development, go to http://localhost:3000
+* `npm run build` - Run for production
+* `npm run npm-check:update` - Interactive console for updating npm packages
+
 ## Features
 
 * [React](https://facebook.github.io/react/)
@@ -14,24 +33,8 @@
 * CSS and SCSS support with [PostCSS](https://github.com/postcss/postcss-loader) for advanced transformations (e.g. autoprefixer).
 * [whatwg-fetch](https://github.com/github/fetch) A window.fetch JavaScript polyfill for programmatically making web requests in the browser.
 
-### Installation
 
-```
-# Clone this repo
-git clone https://github.com/jekaantipin/react-webpack2-starter.git
-
-# Install dependencies
-npm install
-
-# Run for development
-npm run dev
-# go to http://localhost:3000
-
-# Run for production
-npm run build
-```
-
-Plugins
+## Plugins
 
 * Extract Text
 	* [https://github.com/webpack/extract-text-webpack-plugin](https://github.com/webpack/extract-text-webpack-plugin)
@@ -43,7 +46,7 @@ Plugins
 * Define
 	* [https://webpack.github.io/docs/list-of-plugins.html](https://webpack.github.io/docs/list-of-plugins.html)
 
-Loaders
+## Loaders
 
 * babel-loader
 	* [https://github.com/babel/babel-loader](https://github.com/babel/babel-loader)

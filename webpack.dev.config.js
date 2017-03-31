@@ -61,13 +61,13 @@ module.exports = {
               options: {
                 sourceMap: true,
                 plugins: () => [autoprefixer],
-              },
+              }
             },
             {
               loader: 'sass-loader',
               options: {
                 sourceMap: true,
-              },
+              }
             },
           ],
         },
@@ -84,11 +84,17 @@ module.exports = {
         },
         {
           test: /\.(jpe?g|png|gif)$/i,
-          use: { loader: 'url-loader', options: { limit: 10240 } },
+          use: { 
+            loader: 'url-loader', 
+            options: { limit: 10240 } 
+          }
         },
         { 
           test: /\.svg(\?v=\d+\.\d+\.\d+)?$/, 
-          use: { loader: 'url-loader', options: { limit: 10000, mimetype: 'image/svg+xml' } }
+          use: { 
+            loader: 'url-loader', 
+            options: { limit: 10000, mimetype: 'image/svg+xml' } 
+          }
         }        
     ]
   },
@@ -109,6 +115,6 @@ module.exports = {
       title: 'Project title',
       inject: true,
       template: './src/index.ejs'
-    }),
+    })
   ]
 }
