@@ -14,6 +14,7 @@
   "scripts": {
     "clean": "rimraf ./dist",
     "dev": "node webpack-dev-server.js",
+    "dev:dashboard": "webpack-dashboard -- node webpack-dev-server.js",
     "build": "npm run clean && NODE_ENV=production ./node_modules/webpack/bin/webpack.js --define process.env.NODE_ENV='\"production\"' --progress --colors --config ./webpack.prod.config.js --display-error-details",
     "npm-check:update": "npm-check --update"
   },
@@ -74,6 +75,7 @@
     "url-loader": "^0.5.8",
     "webpack": "^2.3.2",
     "webpack-chunk-hash": "^0.4.0",
+    "webpack-dashboard": "^0.3.0",
     "webpack-dev-server": "^2.4.2",
     "webpack-hot-middleware": "^2.17.1",
     "whatwg-fetch": "^2.0.3"

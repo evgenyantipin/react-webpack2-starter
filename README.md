@@ -18,6 +18,7 @@ $ npm install
 
 ## npm commands
 * `npm run dev` - Run for development, go to http://localhost:3000
+* `npm run dev:dashboard` - same as (npm run dev) but with nice logging console interface
 * `npm run build` - Run for production
 * `npm run npm-check:update` - Interactive console for updating npm packages
 
