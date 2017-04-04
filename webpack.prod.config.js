@@ -65,7 +65,7 @@ module.exports = {
             cacheDirectory: false,
             babelrc: false,
             presets: [['es2015', { modules: false }], 'react', 'stage-0'],
-            plugins: ['transform-decorators-legacy', 'transform-runtime', 'lodash']
+            plugins: ['transform-react-remove-prop-types', 'transform-decorators-legacy', 'transform-runtime', 'lodash']
           },
         },
         {

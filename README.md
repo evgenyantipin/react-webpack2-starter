@@ -46,6 +46,8 @@ $ npm install
 	* [https://github.com/mishoo/UglifyJS](https://github.com/mishoo/UglifyJS)
 * Define
 	* [https://webpack.github.io/docs/list-of-plugins.html](https://webpack.github.io/docs/list-of-plugins.html)
+* babel-plugin-transform-react-remove-prop-types - Remove unnecessary React propTypes from the production build.
+	* [https://github.com/oliviertassinari/babel-plugin-transform-react-remove-prop-types]
 
 ## Loaders
 
