@@ -7,6 +7,7 @@ const express = require('express');
 const webpackDevMiddleware = require('webpack-dev-middleware');
 const webpackHotMiddleware = require('webpack-hot-middleware');
 const webpack = require('webpack');
+const open = require('open');
 
 const config = require("./webpack.dev.config.js");
 const compiler = webpack(config);
@@ -32,5 +33,6 @@ app.listen(port, host, function onAppListening(err) {
     console.error(err);
   } else {
     console.info('==> 🚧  Webpack development server listening at http://%s:%s', host, port);     
+    open(`http://localhost:${port}`);
   }
 });
