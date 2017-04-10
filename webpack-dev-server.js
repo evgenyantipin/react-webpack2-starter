@@ -1,18 +1,16 @@
 require('babel-register');
-
-var host = (process.env.HOST || 'localhost');
-var port = (process.env.PORT || 3000);
-
 const express = require('express');
 const webpackDevMiddleware = require('webpack-dev-middleware');
 const webpackHotMiddleware = require('webpack-hot-middleware');
 const webpack = require('webpack');
 const open = require('open');
-
 const config = require("./webpack.dev.config.js");
 const compiler = webpack(config);
 
 const app = express();
+
+let host = (process.env.HOST || 'localhost');
+let port = (process.env.PORT || 3000);
 
 app.use(webpackDevMiddleware(compiler, {  
   hot: true,
