@@ -13,8 +13,7 @@ const rootPath = path.resolve(__dirname, 'src');
 const alias = {
   images: path.resolve(rootPath, 'assets/images'),
   styles: path.resolve(rootPath, 'assets/styles'),
-  fonts: path.resolve(rootPath, 'assets/fonts'),
-  src: rootPath
+  fonts: path.resolve(rootPath, 'assets/fonts')
 };
 
 module.exports = {
@@ -80,6 +79,10 @@ module.exports = {
   },
 
   resolve: {
+    modules: [      
+      rootPath,
+      'node_modules'
+    ],
     alias,
     extensions: ['*', '.js', '.scss', '.png']    
   },

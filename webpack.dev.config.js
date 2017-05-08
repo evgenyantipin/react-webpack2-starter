@@ -12,8 +12,7 @@ const rootPath = path.resolve(__dirname, 'src');
 const alias = {
   images: path.resolve(rootPath, 'assets/images'),
   styles: path.resolve(rootPath, 'assets/styles'),
-  fonts: path.resolve(rootPath, 'assets/fonts'),
-  src: rootPath
+  fonts: path.resolve(rootPath, 'assets/fonts')
 };
 
 const host = process.env.HOST || 'localhost'
@@ -49,10 +48,7 @@ module.exports = {
               }
             },
             {
-              loader: 'css-loader',
-              options: {
-                modules: true
-              }
+              loader: 'css-loader'
             },
             {
               loader: 'resolve-url-loader'
@@ -101,9 +97,12 @@ module.exports = {
   },
 
   resolve: {
+    modules: [      
+      rootPath,
+      'node_modules'
+    ],
     alias,
-    extensions: ['*', '.js', '.scss'],    
-    modules: ['src', 'node_modules']
+    extensions: ['*', '.js', '.scss']    
   },
 
   plugins: [
